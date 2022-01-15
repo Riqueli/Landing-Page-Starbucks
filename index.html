@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Landing Page</title>
+  <link rel ="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="circle">
+
+    </div>
+<header>
+    <a  href="#"><img src="./img/logo.png" class="logo"></a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">what`s New</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</header>
+<div class="content">
+    <div class="textbox">
+        <h2>It's not just Coffee<br> It's <span>StarBucks</span></h2>
+        <p>Everything we do seeks to respect that connection – from our commitment to the world's finest coffee to the way we interact with our customers and our communities to conduct our business responsibly.
+        </p>
+        <a href="#">Learn More</a>
+    </div>
+        <div class="ImageBox">
+            <img src="./img/img1.png" class="starBucks">
+        </div>
+    </div>
+</div>
+<ul class="thumb">
+    <li><img src="./img/img1.png" onclick="imgSlider('./img/img1.png');chnageCircleColor('#017143');"></li>
+    <li><img src="./img/img2.png" onclick="imgSlider('./img/img2.png');chnageCircleColor('#eb7495');"></li>
+    <li><img src="./img/img3.png" onclick="imgSlider('./img/img3.png');chnageCircleColor('#d752b1');"></li>
+</ul>
+<ul class="sci">
+    <li><a href="#"><img src="./img/facebook.png"></a></li>
+    <li><a href="#"><img src="./img/instagram.png"></a></li>
+    <li><a href="#"><img src="./img/twitter.png"></a></li>
+</ul>
+</section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starBucks').src=anything;
+    }
+    function chnageCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+</script>
+
+</body>
+
+</html>
